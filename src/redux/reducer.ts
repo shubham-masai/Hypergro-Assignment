@@ -5,12 +5,12 @@ type ActionType = String;
 
 interface Action {
     type: ActionType;
-    payload: ActionPayload;
+    payload?: ActionPayload;
 }
 
 const initialState = {
     isLoading: false,
-    moviesData: [],
+    moviesData: [] as never,
     isError: false,
     currentPlayingVideo: null
 }

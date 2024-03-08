@@ -59,7 +59,7 @@ export const MovieBody: React.FC = () => {
     if (isLoading) {
         return (
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
-                {new Array(10).fill(0).map((load, index) =><Loading key={index} />)}
+                {new Array(10).fill(0).map((_, index) =><Loading key={index} />)}
             </div>
         );
     }

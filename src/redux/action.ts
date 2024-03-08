@@ -7,11 +7,12 @@ export async function getAllVideos(dispatch: any, page: number) {
         dispatch({ type: GET_REQUEST });
         const res = await axios.get(`${url}?page=${page}`);
         dispatch({ type: GET_ALL_VIDEOS_SUCCESS, payload: res.data.data.posts });
-    } catch (error) {
+    } catch (error: any) {
         console.log("error", error.message);
         dispatch({ type: GET_FAILURE, payload: error.message});
     }
 }
+
 
 export const setCurrentPlayingVideo = (postId: string) => ({
   type: SET_CURRENT_PLAYING_VIDEO,
