@@ -35,8 +35,9 @@ To install and run StreamyX locally, follow these steps:
 
  ![Screenshot (2382)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/46e62cb6-b788-4bea-8e71-b95d9a75a06d)
 
- ![Screenshot (2386)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/3dcecb87-1f89-46af-bde0-8050899a0b1c)
+ ![Screenshot (2387)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/75e1a1d0-d346-4925-96f3-95924bde7b9d)
 
-![Screenshot (2385)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/e28f0d4a-3ee4-4992-9850-11e5fe09cb4b)
+![Screenshot (2389)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/9838ea67-661a-473b-b0be-927fb3c4a1c2)
 
-![Screenshot (2384)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/67e3de75-0fba-4279-aa39-8383846b933e)
+![Screenshot (2388)](https://github.com/shubham-masai/Hypergro-Assignment/assets/130532573/a7f32d3d-b451-4b3d-a568-c57f0f40834f)
+
