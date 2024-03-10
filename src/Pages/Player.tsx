@@ -2,32 +2,14 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa';
+import { Comment, MovieData } from '../types';
 
-interface Creator {
-    name: string;
-    pic: string;
-}
-
-interface Video {
-    postId: string;
-    creator: Creator;
-    submission: {
-        mediaUrl: string;
-        title: string;
-        description: string;
-    };
-}
-
-interface Comment {
-    text: string;
-    timestamp: string;
-}
 
 const Player: React.FC = () => {
     const { id } = useParams<{ id: string }>();
-    const videosData: Video[] = useSelector((state: any) => state.moviesData);
-    const Details: Video[] = videosData.filter((el) => el.postId === id);
-    const videoDetails: Video | undefined = Details[0];
+    const videosData: MovieData[] = useSelector((state: any) => state.moviesData);
+    const Details: MovieData[] = videosData.filter((el) => el.postId === id);
+    const videoDetails: MovieData | undefined = Details[0];
 
     const storedLiked = localStorage.getItem(`${id}_liked`);
     const [disliked, setDisliked] = useState<boolean>(false);

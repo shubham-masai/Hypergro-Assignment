@@ -1,20 +1,5 @@
 import { logo } from "../assets";
-
-interface FooterLink {
-    title: string;
-    links: string[];
-}
-
-interface SocialMediaLink {
-    id: string;
-    icon: string;
-    link: string;
-}
-
-interface FooterProps {
-    footerLinks: FooterLink[];
-    socialMedia: SocialMediaLink[];
-}
+import { FooterProps } from "../types";
 
 export const Footer: React.FC<FooterProps> = ({ footerLinks, socialMedia }) => {
     return (

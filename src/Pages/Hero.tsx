@@ -42,6 +42,7 @@ const Hero: React.FC = () => {
             link: "https://www.linkedin.com/",
         },
     ];
+    
     return (
         <>
             <Home />

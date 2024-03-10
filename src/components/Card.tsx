@@ -4,36 +4,19 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setCurrentPlayingVideo } from '../redux/action';
 import { FaThumbsUp } from 'react-icons/fa';
+import { MovieData } from '../types';
 
-interface CardProps {
-  postId: string;
 
-  creator: {
-    name: string;
-    handle: string;
-    pic: string;
-  };
-
- reaction: {
-    count: number
-  }
-
-  submission: {
-    title: string;
-    thumbnail: string;
-  };
-}
-
-export const Card: React.FC<CardProps> = ({ postId, submission, creator, reaction }) => {
+export const Card: React.FC<MovieData> = ({ postId, submission, creator, reaction }) => {
   const { title, thumbnail } = submission;
   const { name, handle, pic } = creator;
   const { count } = reaction;
   const dispatch = useDispatch();
 
+
   const handleCardClick = () => {
     dispatch(setCurrentPlayingVideo(postId));
   };
-
 
   return (
     <Link to={`/video/${postId}`} onClick={handleCardClick}>

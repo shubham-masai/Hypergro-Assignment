@@ -3,36 +3,7 @@ import { useEffect, useState } from "react";
 import { getAllVideos } from "../redux/action";
 import { Card } from "./Card";
 import Loading from "./Loading";
-
-interface Movie {
-    postId: string;
-    creator: {
-        name: string;
-        id: string;
-        handle: string;
-        pic: string;
-    };
-    comment: {
-        count: number;
-        commentingAllowed: boolean;
-    };
-    reaction: {
-        count: number;
-        voted: boolean;
-    };
-    submission: {
-        title: string;
-        description: string;
-        mediaUrl: string;
-        thumbnail: string;
-    };
-}
-
-interface RootState {
-    moviesData: Movie[];
-    isLoading: boolean;
-}
-
+import {RootState } from "../types";
 
 export const MovieBody: React.FC = () => {
     const { moviesData, isLoading }: RootState = useSelector((store: RootState) => {

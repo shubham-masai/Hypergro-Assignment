@@ -1,20 +1,12 @@
+import { Action, MovieData } from "../types";
 import { GET_REQUEST, GET_ALL_VIDEOS_SUCCESS, SET_CURRENT_PLAYING_VIDEO, GET_FAILURE } from "./actionType";
-
-type ActionPayload = string | any[] | null;
-type ActionType = String;
-
-interface Action {
-    type: ActionType;
-    payload?: ActionPayload;
-}
 
 const initialState = {
     isLoading: false,
-    moviesData: [] as never,
+    moviesData: [] as MovieData[],
     isError: false,
     currentPlayingVideo: null
 }
-
 
 export const reducer = (state = initialState, { type, payload }: Action) => {
     switch (type) {
